@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name / main screen title -->
+    <string name="app_name">Raktár Kereső</string>
+    <string name="app_title">Raktár Kereső</string>
+
+    <!-- Search screen -->
+    <string name="search_hint">Írd be a termék nevét vagy számát...</string>
+    <string name="no_results">Nincs találat</string>
+
+    <!-- Add item -->
+    <string name="add_item_button">Új termék hozzáadása</string>
+    <string name="add_item_title">Termék hozzáadása</string>
+    <string name="label_warehouse">Raktár</string>
+    <string name="label_storage_unit">Tároló egység</string>
+    <string name="label_product_name">Termék neve vagy azonosítója</string>
+    <string name="save_button">Mentés</string>
+
+    <!-- Feedback messages -->
+    <string name="item_saved_success">Termék sikeresen mentve</string>
+    <string name="validation_error">Kérlek, töltsd ki az összes mezőt!</string>
+</resources>
