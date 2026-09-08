@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Screen title: "Raktár Kereső" -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="@string/search_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Shown only when a search returned zero results -->
+    <TextView
+        android:id="@+id/textNoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_results"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+    <!-- Search results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Opens the add-new-product screen -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item_button"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
