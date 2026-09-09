@@ -19,6 +19,9 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      - name: Gradle Wrapper generálása
+        run: gradle wrapper --gradle-version 8.7
+
       - name: Gradle futtatási jog beállítása
         run: chmod +x gradlew
 
